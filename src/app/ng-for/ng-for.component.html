@@ -1,0 +1,12 @@
+<h2>
+  {{title}}
+</h2>
+
+<ul *ngFor="let nome of nomes">
+  <li>nome da pessoa é: {{nome}}</li>
+</ul>
+
+<ul *ngFor="let nome of nome, let i= index">
+  <li>nome da pessoa é: {{nome.nome}} com id {{nome.id}} , está na posição {{i + 1}}</li>
+</ul>
+

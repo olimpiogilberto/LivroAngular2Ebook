@@ -9,12 +9,14 @@ export class NgSwitchCaseComponent implements OnInit {
 
   numero: number = 0;
 
-  incrementarNumero() {
-    this.numero ++;
-  }
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  incrementarNumero() {
+    this.numero ++;
   }
 
 }
