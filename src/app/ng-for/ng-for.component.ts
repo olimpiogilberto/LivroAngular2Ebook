@@ -25,4 +25,13 @@ export class NgForComponent implements OnInit {
 
   }
 
+  atualizar() {
+    this.nomes = [
+    {id:1, nome:'João'},
+    {id:2, nome:'Maria'},
+    {id:3, nome:'Thiago'},
+    {id:4, nome:'José'}
+  ];
+  } 
+
 }
