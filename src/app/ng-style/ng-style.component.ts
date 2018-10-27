@@ -7,11 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgStyleComponent implements OnInit {
 
-  valorFonte: string = 20 + 'px';
+  tamanho: number = 20;
+  valorFonte: string = this.tamanho + 'px';
+  
+  validaFonte: boolean = false;
+  validaCor: boolean = false;
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  incrementar(){
+    this.tamanho ++;
+  }
+  mudaFonte(){
+    this.validaFonte = ! this.validaFonte;
+  }
+
+  mudaCor(){
+    this.validaCor = ! this.validaCor;
+  }
+
 
 }
